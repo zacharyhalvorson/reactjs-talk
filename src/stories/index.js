@@ -1,22 +1,36 @@
 import React from 'react';
-
 import { storiesOf } from '@storybook/react';
 
-import { Modal, SettingsModal } from '../components/Modal';
-import { BackButton } from '../components/Button';
+
+import Avatar from '../components/Avatar'
+import Action from '../components/Action'
+import Button from '../components/Button'
+import Modal from '../components/Modal'
+import ProfileModal from '../components/ProfileModal';
+
 
 import Details from '../images/details.svg';
+
+storiesOf('Action', module)
+	.add('default', () => <Action />)
+
+storiesOf('Avatar', module)
+	.add('default', () => <Avatar />)
+
+storiesOf('Button', module)
+	.add('default', () => <Button />)
+	.add('primary', () => <Button isPrimary />)
 
 storiesOf('Modal', module)
 	.add('default', () => <Modal />)
 	.add('primary', () => <Modal isPrimary />)
 
-storiesOf('Settings Modal', module)
+storiesOf('Profile Modal', module)
 	.add('default', () =>
-		<SettingsModal />
+		<ProfileModal />
 	)
-	.add('settings', () =>
-		<SettingsModal
+	.add('replicants', () =>
+		<ProfileModal
 			isPrimary
 			backButtonLabel="Replicants"
 			rightSideAction={Details}
@@ -25,6 +39,3 @@ storiesOf('Settings Modal', module)
 			buttonLabel="Retire"
 		/>
 	)
-
-storiesOf('Button', module)
-	.add('BackButton', () => <BackButton />)

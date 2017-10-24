@@ -1,7 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
-
-import BackButton from './BackButton'
 
 import { OrangeGradient } from '../../constants/gradients'
 
@@ -9,14 +8,15 @@ const Button = styled.button`
 	color: white;
 	font-size: 16px;
 	font-weight: 700;
-	padding: .75rem 1.5rem;
+	padding: .75rem 2.5rem;
 	border-radius: 4px;
-	background: ${props => props.secondary ? `transparent` : OrangeGradient};
+	background: ${props => props.isPrimary ? OrangeGradient : `transparent`};
 	border: none;
 	cursor: pointer;
 `
 
-export {
-	Button,
-	BackButton,
+Button.defaultProps = {
+	children: 'Label goes here'
 }
+
+export default Button

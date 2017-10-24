@@ -5,8 +5,6 @@ import styled from 'styled-components'
 import { PurpleGradient, GreenGradient } from '../../constants/gradients'
 import { PopoverShadow } from '../../constants/shadows'
 
-import SettingsModal from './SettingsModal'
-
 const Modal = styled.div`
 	font-family: -apple-system;
 	text-align: center;
@@ -22,7 +20,4 @@ const Modal = styled.div`
 	background-image:  ${props => props.isPrimary ? PurpleGradient : GreenGradient};
 `
 
-export {
-	Modal,
-	SettingsModal,
-}
+export default Modal

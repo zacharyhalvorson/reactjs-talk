@@ -1,5 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
 const Avatar = styled.img`
 	display: block;
@@ -9,5 +10,9 @@ const Avatar = styled.img`
 	width: 72px;
 	text-align: center;
 `
+
+Avatar.defaultProps = {
+	src: 'http://78.media.tumblr.com/avatar_8d7cb9525438_128.png'
+}
 
 export default Avatar;
