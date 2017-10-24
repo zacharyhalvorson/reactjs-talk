@@ -1,15 +1,13 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
-
+import React from 'react'
+import { storiesOf } from '@storybook/react'
 
 import Avatar from '../components/Avatar'
 import Action from '../components/Action'
 import Button from '../components/Button'
 import Modal from '../components/Modal'
-import ProfileModal from '../components/ProfileModal';
+import ProfileModal from '../components/ProfileModal'
 
-
-import Details from '../images/details.svg';
+import Details from '../images/details.svg'
 
 storiesOf('Action', module)
 	.add('default', () => <Action />)
