@@ -7,9 +7,10 @@ import Caret from '../../images/back.svg';
 const Label = styled.span`
 	color: white;
 	font-family: -apple-system;
+	font-weight: bold;
 	font-size: 18px;
 	position: relative;
-	left: -8px;
+	left: -10px;
 `
 
 const AlignmentWrapper = styled.div`
@@ -19,7 +20,7 @@ const AlignmentWrapper = styled.div`
 
 const BackButton = ({ label }) =>
 	<AlignmentWrapper>
-		<img style={{ height: 36, width: 36 }} src={Caret} />
+		<img style={{ height: 40, width: 40 }} src={Caret} />
 		<Label>{ label }</Label>
 	</AlignmentWrapper>
 

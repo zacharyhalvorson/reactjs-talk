@@ -1,11 +1,11 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
-import { PurpleGradient, GreenGradient } from '../../constants/gradients';
-import { PopoverShadow } from '../../constants/shadows';
+import { PurpleGradient, GreenGradient } from '../../constants/gradients'
+import { PopoverShadow } from '../../constants/shadows'
 
-import SettingsModal from './SettingsModal';
+import SettingsModal from './SettingsModal'
 
 const Modal = styled.div`
 	font-family: -apple-system;
@@ -13,9 +13,9 @@ const Modal = styled.div`
 	font-size: 3rem;
 	color: white;
 
-	border-radius: 6px;
+	border-radius: 16px;
 	width: 90%;
-	max-width: 280px;
+	max-width: 260px;
 	padding: 1rem;
 
 	box-shadow: ${PopoverShadow};
@@ -25,4 +25,4 @@ const Modal = styled.div`
 export {
 	Modal,
 	SettingsModal,
-};
+}

@@ -1,10 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
-import Avatar from '../Avatar';
-import { Button, BackButton } from '../Button';
-import { Modal } from './';
+import Avatar from '../Avatar'
+import { Button, BackButton } from '../Button'
+import { Modal } from './'
 
 import Cog from '../../images/settings.svg'
 
@@ -16,12 +16,12 @@ const SplitWrapper = styled.div`
 
 const Name = styled.h1`
 	margin: 2rem 0;
-	font-size: 28px;
+	font-size: 24px;
 `
 
 const Action = styled.img`
-	height: 32px;
-	width: 32px;
+	height: 36px;
+	width: 36px;
 `
 
 const SettingsModal = ({ name, pictureUrl, isPrimary, buttonLabel, backButtonLabel, rightSideAction }) =>
@@ -42,4 +42,4 @@ SettingsModal.defaultProps = {
 	buttonLabel: 'Label goes here',
 }
 
-export default SettingsModal;
+export default SettingsModal

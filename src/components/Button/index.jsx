@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
-import BackButton from './BackButton';
+import BackButton from './BackButton'
 
-import { OrangeGradient } from '../../constants/gradients';
+import { OrangeGradient } from '../../constants/gradients'
 
 const Button = styled.button`
 	color: white;
@@ -14,9 +14,9 @@ const Button = styled.button`
 	background: ${props => props.secondary ? `transparent` : OrangeGradient};
 	border: none;
 	cursor: pointer;
-`;
+`
 
 export {
 	Button,
 	BackButton,
-};
+}
