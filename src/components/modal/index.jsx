@@ -1,10 +1,28 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const Modal = styled.div`
-	background-color: papayawhip;
-	padding: 1rem;
-	color: teal;
-`;
+import { PurpleGradient, GreenGradient } from '../../constants/gradients';
+import { PopoverShadow } from '../../constants/shadows';
 
-export default Modal;
+import SettingsModal from './SettingsModal';
+
+const Modal = styled.div`
+	font-family: -apple-system;
+	text-align: center;
+	font-size: 3rem;
+	color: white;
+
+	border-radius: 6px;
+	width: 90%;
+	max-width: 280px;
+	padding: 1rem;
+
+	box-shadow: ${PopoverShadow};
+	background-image:  ${props => props.isPrimary ? PurpleGradient : GreenGradient};
+`
+
+export {
+	Modal,
+	SettingsModal,
+};
