@@ -21,7 +21,7 @@ storiesOf('Settings Modal', module)
 			backButtonLabel="Home"
 			rightSideAction={Details}
 			name="Zachary"
-			pictureUrl="https://avatars0.githubusercontent.com/u/3810721?s=460&v=4"
+			pictureUrl="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAKOAAAAJDY5MmZmNzM5LWIyMmItNDUxZC04ODJlLTRiYmY4ZGRhOTE2OQ.jpg"
 			buttonLabel="Click me!"
 		/>
 	)
