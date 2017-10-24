@@ -18,11 +18,11 @@ storiesOf('Settings Modal', module)
 	.add('settings', () =>
 		<SettingsModal
 			isPrimary
-			backButtonLabel="Home"
+			backButtonLabel="Replicants"
 			rightSideAction={Details}
-			name="Zachary"
-			pictureUrl="https://avatars0.githubusercontent.com/u/3810721?s=460&v=4"
-			buttonLabel="Click me!"
+			name="Rick Deckard"
+			pictureUrl="https://i.kinja-img.com/gawker-media/image/upload/s--DgVKPS86--/c_fill,fl_progressive,g_center,h_200,q_80,w_200/uqawfpoaw8uijfz6xafy.jpg"
+			buttonLabel="Retire"
 		/>
 	)
 
