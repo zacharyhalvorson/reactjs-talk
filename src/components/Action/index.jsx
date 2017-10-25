@@ -13,4 +13,4 @@ Action.defaultProps = {
 	src: Share
 }
 
-export default Action;
+export default Action

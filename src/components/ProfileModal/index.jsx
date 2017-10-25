@@ -21,13 +21,20 @@ const Name = styled.h1`
 	font-size: 24px;
 `
 
-const ProfileModal = ({ name, pictureUrl, isPrimary, buttonLabel, backButtonLabel, rightSideAction }) =>
+const ProfileModal = ({
+	isPrimary,
+	backButtonLabel,
+	rightSideAction,
+	profileName,
+	pictureUrl,
+	buttonLabel,
+}) =>
 	<Modal isPrimary={isPrimary}>
 		<SplitWrapper>
 			<BackButton label={backButtonLabel}/>
 			<Action src={rightSideAction} />
 		</SplitWrapper>
-		<Name>{name}</Name>
+		<Name>{profileName}</Name>
 		<Avatar src={pictureUrl} />
 		<Button isPrimary={isPrimary}>{buttonLabel}</Button>
 	</Modal>
